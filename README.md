@@ -18,25 +18,25 @@ You can install all required dependencies with the following command:
 pip install -r requirements.txt
 ```
 
-1. Property Data Scraper (property_scraper.py)
+1. Property Data Scraper (main.py)
 This script uses Selenium and BeautifulSoup to scrape property data from "https://polaris3g.mecklenburgcountync.gov/address/". It navigates to each property's page by incrementing an ID in the URL, extracts the legal description and address, and saves the data into property_data.csv.
 
 Usage
 To run the script, execute:
 
 ```bash
-python property_scraper.py
+python main.py
 ```
 The script will create a file named property_data.csv and populate it with property data fetched from the web. You can adjust the range of pages to scrape by modifying the range in the for-loop.
 
-2. Property Data Search (property_search.py)
+2. Property Data Search (search_engine.py)
 This script loads the data collected by the scraper from property_data.csv and allows the user to search for properties by entering a legal description. It supports case-insensitive substring matching.
 
 Usage
 To start the search interface, run:
 
 ```bash
-python property_search.py
+python search_engine
 ```
 Enter a legal description to search for. Type 'exit' to quit the program.
 
