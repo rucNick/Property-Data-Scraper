@@ -36,7 +36,7 @@ Usage
 To start the search interface, run:
 
 ```bash
-python search_engine
+python search_Engine.py
 ```
 Enter a legal description to search for. Type 'exit' to quit the program.
 
