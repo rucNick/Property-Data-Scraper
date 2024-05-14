@@ -5,7 +5,7 @@ def search_legal_description(description):
     # Load data only once if this function will be called multiple times
     global df
     if 'df' not in globals():
-        df = pd.read_csv('property_data.csv')  # Ensure the filename matches your CSV file
+        df = pd.read_csv('property_data.csv')  # Ensure the filename matches CSV file
 
     # Perform a case-insensitive substring search
     matches = df[df['Legal Description'].str.contains(description, case=False, na=False)]
